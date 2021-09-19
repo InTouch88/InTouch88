@@ -8,6 +8,72 @@
     <script src="script.js"></script>
 </head>
 <body>
-    
+    <p><b>Task 1:</b></p>
+    <p>Напишіть скріпт всередині HTML-документу, який виводить на екран ваше ім'я за допомогою функції alert().</p>
+    <script>
+        function showMyName() {
+    alert("Roman")
+}
+    </script>
+    <button onclick="showMyName()">Run Task 1</button>
+
+    <p><b>Task 2:</b></p>
+    <p>Напишіть скріпт в зовнішньому файлі, який виводить в консоль ваше прізвище.    
+        Підключіть створений файл до HTML-документу.
+  </p>
+  <button onclick="showMyName()">Run Task 2</button>
+
+  <p><b>Task 3:</b>
+    </p>a) оголосіть дві змінні;</br>
+    b) запишіть у змінні будь-які значення;</br>
+    c) виведіть на екран значення змінних;</br>
+    d) скопіюйте значення однієї змінної в іншу;</br>
+    e) виведіть на екран значення змінних.
+<p>
+  </p>
+  <button onclick="showVariables()">Run Task 3</button>
+  <button onclick="copyVariables()">Copy variables</button>
+  <button onclick="resetVariables()">Reset variables</button>
+
+  <p><b>Task 4:</b></p>
+    <p>Створіть об’єкт з 5-ма наступними властивостями: “String”, “Number”, “Boolean”, “Undefined”, “Null”. Значення кожної властивості повинно відповідати відповідному примітивному типу даних.
+  </p>
+  <button onclick="showCode()">Run Task 4</button><br>
+  <code id="task_4" style="display: none; padding-top: 15px;">let object = {
+    "String": "I am a string",
+    "Number": 10,
+    "Boolean": true,
+    "Undefined": undefined,
+    "Null": null
+}</code>
+
+<p><b>Task 5:</b></p>
+    <p>Використовуючи функцію confirm() задайте користувачу питання про досягнення ним повнолітнього віку. Результат запишіть в змінну isAdult і виведіть в консоль.
+  </p>
+  <button onclick="askForAge()">Run Task 5</button>
+
+  <p><b>Task 6:</b></p>
+    <p>В зовнішньому файлі напишіть скріпт, в якому оголосіть змінні, для збереження таких даних: <br>
+        - ваше ім’я<br>
+        - ваше прізвище<br>
+        - навчальна група<br>
+        - ваш рік народження. <br>
+    Присвойте змінним відповідні значення. <br>
+    Створіть та проініціалізуйте логічну змінну для збереження вашого сімейного стану. <br>
+    Визначте тип кожної змінної. <br>
+    Виведіть значення змінних в консоль, відповідно до їх типу, в такому порядку: Number, Boolean, String. <br>
+    Створіть 2 довільних змінних типу Null і Undefined відповідно. Виведіть їх тип в консоль.
+  </p>
+  <button onclick="showInConsole()">Run Task 6</button>
+
+  <p><b>Task 7:</b></p>
+    <p>За допомогою функції prompt() напишіть скріпт, який послідовно запитує в користувача логін, емейл та пароль, і виводить на екран повідомлення із введеними даними. Наприклад “Dear User, your email is usermale@gmail.com, your password is qwerty”.
+  </p>
+  <button onclick="askForCredentials()">Run Task 7</button>
+
+  <p><b>Task 8:</b></p>
+    <p>Напишіть скріпт, який вираховує кількість секунд в годині, в добі, в місяці, записує результати в відповідні змінні, і виводить їх значення на екран.
+  </p>
+  <button onclick="secondsAmount()">Run Task 8</button>
 </body>
 </html>
