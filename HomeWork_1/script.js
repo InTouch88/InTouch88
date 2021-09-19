@@ -1,6 +1,6 @@
 //Task 2
-function showMyName() {
-    alert("Bzhezytskyi")
+function showMySurname() {
+    console.log("Bzhezytskyi");
 }
 //Task3
 let a = 10;
