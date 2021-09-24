@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h3>Task 1</h3>
+    <p>1. Заданий масив з елементами [2, 3, 4, 5]. За допомогою циклу for знайдіть добуток елементів цього масиву. Також реалізуйте завдання через while.</p>
+    <button onclick="findSumFor()">Run Task 1 For</button>
+    <button onclick="findSumWhile()">Run Task 1 While</button>
+
+    <h3>Task 2</h3>
+    <p>Напишіть JavaScript for цикл, який буде ітеруватися від 0 до 15. Для кожної ітерації він перевірятиме, чи є поточне число парним чи непарним, і відображатиме повідомлення на екрані <br>
+            Sample Output: <br>
+            "0 is even" <br>
+            "1 is odd" <br>
+            "2 is even" <br>
+            </p>
+    <button onclick="numberCheck()">Run Task 2</button>
+
+    <h3>Task 3</h3>
+    <p>Напишіть функцію randArray(k), яка заповнюватиме масив k випадковими цілими числами. Випадкові числа генеруються із діапазону 1-500. <br>
+
+            Sample Output: <br>
+            randArray(5);  // 399,310,232,379,40            
+            </p>
+    <button onclick="randArray(5)">Run Task 3</button>
+
+    <h3>Task 4</h3>
+    <p>Напишіть функцію raiseToDegree(a,b), яка повертає результат піднесення числа a до степеня b. Функція працює тільки з цілими числами. Реалізувати інтерфейс введення чисел a, b з клавіатури. <br>
+
+            Sample Output: <br>
+            raiseToDegree(3, 4);  // 81
+            </p>
+    <button>Check the code, since there is return statement</button>
+    <button onclick="showInConsole()">Show result in console</button>
+
+    <h3>Task 5</h3>
+    <p>Реалізуйте функцію – findMin(), яка повинна приймати довільну кількість числових аргументів і повертати той, який має найменше значення. Порада: для розв’язку можете скористатися спеціальним масивом arguments. <br>
+            Sample Output: <br>
+            findMin(12, 14, 4, -4, 0.2); // => -4
+            </p>
+    <button onclick="findMin(1, 4, -1, 2, 8)">Run Task 5</button>
+
+    <h3>Task 6</h3>
+    <p>Напишіть функцію findUnique(arr), яка приймає масив arr і перевіряє на унікальність його елементи. Якщо всі елементи масиву унікальні (не мають дублів), то функція поверне true, інакше - false. <br>
+            Sample Output: <br>
+            findUnique([1, 2, 3, 5, 3]);  // => false <br>
+            findUnique([1, 2, 3, 5, 11]); // => true
+            
+            </p>
+    <button onclick="findUnique([1, 2, 3, 4, 7])">Run Task 6</button>
+
+    <h3>Task 7</h3>
+    <p>Напишіть функцію, яка повертає останній елемент масиву. Функція може приймати 2 параметра: 1-ий масив, 2-ий числовий параметр, що відповідає кількості 'х' останніх елементів масиву, які треба вивести. <br>
+
+                Sample Output: <br>
+                console.log(lastElem([3, 4, 10, -5]));      // -5 <br>
+                console.log(lastElem([3, 4, 10, -5],2));   // [10, -5] <br>
+                console.log(lastElem([3, 4, 10, -5],8));   // [3, 4, 10, -5] <br>
+                </p>
+    <button onclick="returnLastElement([1,2,3,4,5], 3)">Run Task 7</button>
+
+    <h3>Task 8</h3>
+    <p>Напишіть функцію, яка приймає рядок як параметр і перетворює першу букву кожного слова рядка в верхній регістр. <br>
+
+                Input string: 'i love java script' <br>
+                Output string: 'I Love Java Script'
+                </p>
+    <button onclick="transformToUpper('i love java script')">Run Task 8</button>
+</body>
+</html>
