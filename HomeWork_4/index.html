@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h3>Task 1</h3>
+    <p>Реалізуйте функцію calcRectangleArea(), яка приймає 2 параметри ширина прямокутника width і висота прямокутника height і обраховує його площу. <br> Передбачити припинення виконання програми і генерацію винятку у випадку, якщо функції передано не числові параметри. <br>
+                Напишіть код, який використовує цю функцію та обробляє можливі виняткові ситуації.
+                </p>
+    <button onclick="calcRectangleArea('string', 13)">Run Task 1</button>
+
+    <h3>Task 2</h3>
+    <p>Напишіть функцію checkAge(), яка пропонуватиме юзеру ввести свій вік і генерувати в модальному вікні помилки у випадку, коли: <br>
+                - юзер ввів порожню стрічку (наприклад “The field is empty! Please enter your age”), <br>
+                - нечислове значення <br>
+                - вік юзера менше 14 років. <br>
+        В іншому разі юзер отримує доступ до перегляду фільму.
+        В блокові catch передбачити виведення назви і опису помилки.
+        
+                </p>
+    <button onclick="checkAge()">Run Task 2</button>
+
+    <h3>Task 3</h3>
+    <p>Реалізуйте функцію showUser(id), яка приймає параметром користувацьке id і повертає об’єкт, <br> який містить значення переданої id. Також функція викидає помилку у разі якщо введено від’ємне id. <br>
+                Реалізуйте функцію showUsers(ids), яка приймає параметром масив користувацьких айді ids, <br> перевіряє з використанням функції showUser() кожен елемент масиву ids на коректність, <br> в разі виключної ситуації виводить повідомлення про помилку. <br><br> Функція showUsers(ids) повертає масив об’єктів, де значеннями ключів є коректні елементи ids. <br> <br>
+        
+                Приклад роботи програми: <br>
+        showUsers([7, -12, 44, 22]); <br>
+        Error: ID must not be negative: -12 <br>
+        [ {id: 7}, {id: 44}, {id: 22} ]
+        </p>
+    <button onclick="showUser(2)">Run showUser</button>
+    <button onclick="showUsers([1,-3,5,7])">Run showUsers</button>
+
+    
+</body>
+</html>
