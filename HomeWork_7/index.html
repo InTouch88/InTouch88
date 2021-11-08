@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Task 1</h3>
+    За допомогою методів об’єкта window створити: <br>
+	1) нове вікно розміром 300х300 пікселів.<br>
+	2) із затримкою 2 сек змініть розміри вікна на 500х500 пікселів<br>
+	3) із затримкою 2 сек перемістіть вікно в точку з координатами (200, 200)<br>
+	4) із затримкою 2 сек закрийте вікно.<br><br>
+
+    <button onclick="runTask1()">Task 1</button>
+
+    <h3>Task 2</h3>
+    Для заданої HTML-сторінки:
+
+<p id ='text'>I learning JavaScript events!</p> 
+<div onclick="changeCSS()">
+	<button>Change style!</button>
+</div>
+<br>
+напишіть функцію changeCSS(), яка спрацьовуватиме по кліку на кнопку і змінюватиме стиль 
+вмісту тега p: колір шрифту – оранжевий, розмір шрифту 20 пс, шрифт сімейства "Comic Sans MS".
+
+<h3>Task 3</h3>
+Задано сторінку з 3 кнопками і 1 лінкою. <br> Напишіть Javascript код і реалізуйте HTML-сторінку з відповідними подіями на кожному елементові: <br>
+	1) 1-ша кнопка – при кліку на неї колір фону сторінки міняється на синій<br>
+	2) 2-га кнопка – при подвійному кліку на неї колір фону сторінки міняється на рожевий<br>
+	3) 3-я кнопка – при натисненні і утримуванні кнопки колір фону сторінки стає коричневий. При відпусканні – білий.<br>
+    4) При наведенні на лінку – колір фону стає жовтим, при відведенні – білим.<br> <br>
+    <button onclick="makeThePageBlue()">Click to make the page blue</button>
+    <button ondblclick="makeThePagePink()">Double-click to make the page pink</button>
+    <button onmousedown="makeThePageBrown()" onmouseup="makeThePageWhite()">Click and hold to make the page brown</button>
+    <a href="#" onmouseover="makeThePageYellow()" onmouseout="makeThePageWhite()">Hover over to make the page yellow</a>
+
+    <h3>Task 4</h3>
+    Реалізуйте програму, яка по натисканню на кнопку видалятиме обраний елемент випадаючого списку. <br> Можуть видалятися всі елементи в будь-якому порядку. <br> <br>
+    <select size="1" name="names">
+            <option value="First">First</option>
+            <option value="Second">Second</option>
+            <option value="Third">Third</option>
+            <option value="Fourth">Fourth</option>
+    </select>
+    <button onclick="chooseAndDelete()">Choose and Delete</button>
+
+    <h3>Task 5</h3>
+    Реалізуйте програму, яка по натисканню на кнопку виводитиме повідомлення <br>
+"I was pressed!", при наведенні на кнопку виводитиме повідомлення "Mouse on me!", а при відведенні курсора миші виводитиме повідомлення "Mouse is not on me!". <br> <br>
+
+<button id="live">Live button</button> <br>
+
+<h3>Task 6</h3>
+Реалізуйте програму, яка відслідковуватиме зміну розміру (ширини і висоти) вікна браузера і виводитиме на поточну сторінку при її розтязі/стисканні відповідні значення. <br> <br>
+<p>Width: <span id="width"></span></p>
+<p>Height: <span id="height"></span></p>
+
+<h3>Task 7</h3>
+На сторінці потрібно реалізувати 2 випадаючих списки. У першому містяться назви країн, у другому – назви міст.  <br> Реалізувати роботу таким чином, щоб коли вибирається з лівого випадаючого списку певна країна - в правому випадаючому  списку з'являлися міста цієї країни. <br> Список міст формується динамічно, через JavaScript. Також потрібно нижче вивести назву обраної країни і місто. <br> <br>
+<select name="country" id="country">
+        <option value="ger">Germany</option>
+        <option value="usa">USA</option>
+        <option value="ukr">Ukraine</option>
+    </select>
+                        
+    <select name="cities" id="cities"></select> <br> <br>
+    <span id="show-county">Germany: </span><span id="show-city">Berlin</span>
+      
+<script src="script.js"></script>
+</body>
+</html>
