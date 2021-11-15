@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Task 3</h3>
+    Для заданої сторінки використовуючи бібліотеку jQuery знайдіть всі h2 з класом head, <br> зробіть для них зелений колір фону, потім серед знайдених елементів знайдіть елементи з класом inner і поставте їм розмір шрифту 35px. <br>
+    <h2 class="head">header1</h2>
+    <h2 class="head">header2 <span class="inner">inner elem1</span></h2>
+    <h2>header3</h2>
+    <h2 class="head">header4<span>inner elem2</span></h2>
+    <h2>header5</h2>
+
+    <button onclick="runTask3()">Run Task 3</button>
+
+    <h3>Task 4</h3>
+    На HTML-сторінці є 6 чекбоксів. Використовуючи бібліотеку jQuery, напишіть скріпт, <br> який після того, як користувач позначив будь-які 3 чекбокси, всі чекбокси робить неактивними. <br> <br>
+
+    <input type="checkbox" name="" id="">
+    <input type="checkbox" name="" id="">
+    <input type="checkbox" name="" id="">
+    <input type="checkbox" name="" id="">
+    <input type="checkbox" name="" id="">
+    <input type="checkbox" name="" id="">
+
+    <h3>Task 5</h3>
+    Напишіть регулярний вираз, який в рядковому тексті 2 підстрічки буде міняти місцями.
+	Приклад роботи: <br>
+    Вхідний рядок    "Java Script" <br>
+    Вихід    “Script, Java” <br> <br>
+    <button onclick="StringReplace()">Run Task 5</button>
+
+    <h3>Task 6</h3>
+    Напишіть функцію, яка приймає рядкові ані і виконує перевірку на їх відповідність емейлу. <br>
+	Вимоги: <br>
+•  Цифри (0-9). <br>
+•  Тільки латинські літери в великому (A-Z) і малому (a-z) регістрах. <br>
+•  В тілі емейла допустимі лише символи “_” і “-”. <br>
+ •  Символ “-” не може повторюватися, не може бути 1-им символом емейлу. <br>
+<h3>Task 7</h3>
+Напишіть функцію, яка перевіряє правильність логіна. <br> Правильний логін - рядок від 2 до 10 символів, що містить лише букви та цифри,цифра не може бути першою. <br> Функція має приймати рядок і знаходити усі числа в цьому рядку, включаючи числа з плаваючою комою (наприклад, 3.4). <br><br>
+	Приклад роботи: <br>
+checkLogin('ee1.1ret3'); <br>
+true <br>
+1.1, 3 <br>
+
+checkLogin('ee1*1ret3'); <br>
+false <br>
+1, 1, 3<br>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
