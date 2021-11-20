@@ -76,4 +76,4 @@ function checkLogin(str) {
     }
     console.log(str.match(regExp2));
 }
-checkLogin('ee1*1ret3');
+checkLogin('ee1*1ret3');    
